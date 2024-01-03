@@ -1,0 +1,79 @@
+body{
+    background-image: linear-gradient(to left, #ffdab9, #98f,#fffdd0);
+    font-family: sans-serif;
+    height: 100vh;
+}
+.to-do{
+    max-width: 620px;
+    background-image: linear-gradient(to right, #98fb98,white) ;
+    margin: 100px auto;
+    padding: 20px 30px 50px ;
+    border-radius: 15px;
+}
+.to-do h1{
+    color: black;
+    text-align: center;
+    font-size: 34px;
+}
+form{
+    display: flex;
+    gap: 12px;
+    margin:25px;
+    
+}
+#task{
+    border: 3px blue solid ;
+    width: 65%;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-left: 30px;
+}
+#btn{
+    /* width: 45px; */
+    padding: 20px 25px;
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    border-radius: 100px;
+    cursor: pointer;
+    
+}
+#btn:hover{
+    background-color: #4a15e9;
+    border: 3px black solid;
+}
+ul li{
+    list-style-type:none ;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 6px 10px 30px ;
+    /* display: flex;
+    flex-direction: column; */
+    /* gap: 10px; */
+    position: relative;
+}
+ul li::before{
+    content: "□   ";
+    position: absolute;
+    left: -1px;
+    top: 4px;
+    font-size: 1.2rem;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: green;
+}
+ul li.checked::before{
+    content: " ☑";
+}
+.task-list{
+    padding: 0px 30px;
+}
+ul li span{
+    color: red;
+    position: absolute;
+    right:4px;
+    top:1.4px;
+    font-size: 1.6rem;
+}
